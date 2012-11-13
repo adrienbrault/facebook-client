@@ -1,6 +1,6 @@
 <?php
 
-namespace Footcho\FacebookClientBundle;
+namespace Footcho\FacebookClientBundle\DependencyInjection;
 
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\Config\FileLocator;
