@@ -1,0 +1,10 @@
+{
+    "name": "footcho/facebook-client",
+    "license": "MIT",
+    "require": {
+        "guzzle/guzzle": "3.*"
+    },
+    "require-dev": {
+        "symfony/framework-bundle": "2.1.*"
+    }
+}
