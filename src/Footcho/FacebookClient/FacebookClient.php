@@ -3,6 +3,7 @@
 namespace Footcho\FacebookClient;
 
 use Guzzle\Service\Client;
+use Guzzle\Service\Description\ServiceDescription;
 use Guzzle\Common\Collection;
 
 /**
@@ -23,6 +24,9 @@ class FacebookClient extends Client
         $config = Collection::fromConfig($config, $default, array());
 
         $client = new static($config->get('base_url'), $config);
+
+        $description = ServiceDescription::factory(__DIR__.'/Resources/client.json');
+        $client->setDescription($description);
 
         return $client;
     }

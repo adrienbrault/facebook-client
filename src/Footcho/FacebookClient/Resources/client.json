@@ -1,0 +1,20 @@
+{
+    "operations": {
+        "getMe": {
+            "httpMethod": "GET",
+            "uri": "/me",
+            "class": "Guzzle\\Service\\Command\\OperationCommand",
+            "parameters": {
+                "access_token": {
+                    "type": "string",
+                    "required": true,
+                    "location": "header",
+                    "sentAs": "Authorization",
+                    "filters": [
+                        "Footcho\\FacebookClient\\Helper\\AuthorizationHelper::getAuthorizationFromAccessToken"
+                    ]
+                }
+            }
+        }
+    }
+}

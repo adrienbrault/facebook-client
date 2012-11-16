@@ -1,0 +1,5 @@
+HTTP/1.1 200 OK
+Content-Type: text/javascript; charset=UTF-8
+Content-Length: 251
+
+{"id":"659664442","name":"Adrien Brault","first_name":"Adrien","last_name":"Brault","link":"http:\/\/www.facebook.com\/Monsti","username":"Monsti","gender":"male","timezone":1,"locale":"en_US","verified":true,"updated_time":"2012-11-12T09:30:56+0000"}
