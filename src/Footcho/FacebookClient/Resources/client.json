@@ -2,12 +2,17 @@
     "operations": {
         "getObject": {
             "httpMethod": "GET",
-            "uri": "/{id}",
+            "uri": "/{id}{?fields}",
             "class": "Guzzle\\Service\\Command\\OperationCommand",
             "parameters": {
                 "id": {
                     "type": ["string", "integer"],
                     "required": true,
+                    "location": "uri"
+                },
+                "fields": {
+                    "type": "array",
+                    "required": false,
                     "location": "uri"
                 },
                 "access_token": {

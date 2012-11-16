@@ -13,10 +13,15 @@ class FacebookClientTest extends \Guzzle\Tests\GuzzleTestCase
 
         $response = $client->getObject('me', array(
             'access_token' => 'fake_facebook_access_token',
+            'fields' => array(
+                'id',
+                'name',
+                'first_name',
+            ),
         ));
         $result = $response->json();
 
-        $this->assertEquals('/me', $response->getRequest()->getPath());
+        $this->assertEquals('/me?fields=id,name,first_name', $response->getRequest()->getPath());
 
         $this->assertEquals(array(
             'id' => '659664442',
