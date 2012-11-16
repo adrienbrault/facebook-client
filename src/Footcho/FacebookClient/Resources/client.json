@@ -1,13 +1,18 @@
 {
     "operations": {
-        "getMe": {
+        "getObject": {
             "httpMethod": "GET",
-            "uri": "/me",
+            "uri": "/{id}",
             "class": "Guzzle\\Service\\Command\\OperationCommand",
             "parameters": {
+                "id": {
+                    "type": ["string", "integer"],
+                    "required": true,
+                    "location": "uri"
+                },
                 "access_token": {
                     "type": "string",
-                    "required": true,
+                    "required": false,
                     "location": "header",
                     "sentAs": "Authorization",
                     "filters": [

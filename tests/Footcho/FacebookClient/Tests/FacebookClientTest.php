@@ -11,10 +11,12 @@ class FacebookClientTest extends \Guzzle\Tests\GuzzleTestCase
             'graph/me',
         ));
 
-        $response = $client->getMe(array(
+        $response = $client->getObject('me', array(
             'access_token' => 'fake_facebook_access_token',
         ));
         $result = $response->json();
+
+        $this->assertEquals('/me', $response->getRequest()->getPath());
 
         $this->assertEquals(array(
             'id' => '659664442',

@@ -30,4 +30,11 @@ class FacebookClient extends Client
 
         return $client;
     }
+
+    public function getObject($id, $commandArguments)
+    {
+        return parent::getObject(array_merge(array(
+            'id' => $id
+        ), $commandArguments));
+    }
 }
