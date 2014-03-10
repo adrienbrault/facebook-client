@@ -12,5 +12,10 @@
             "Footcho\\FacebookClient": "src",
             "Footcho\\FacebookClientBundle": "src"
         }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.0-dev"
+        }
     }
 }
