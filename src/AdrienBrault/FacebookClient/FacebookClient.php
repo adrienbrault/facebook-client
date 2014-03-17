@@ -1,6 +1,6 @@
 <?php
 
-namespace Footcho\FacebookClient;
+namespace AdrienBrault\FacebookClient;
 
 use Guzzle\Service\Client;
 use Guzzle\Service\Description\ServiceDescription;

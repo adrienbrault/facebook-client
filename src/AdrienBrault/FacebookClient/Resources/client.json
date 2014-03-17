@@ -21,7 +21,7 @@
                     "location": "header",
                     "sentAs": "Authorization",
                     "filters": [
-                        "Footcho\\FacebookClient\\Helper\\AuthorizationHelper::getAuthorizationFromAccessToken"
+                        "AdrienBrault\\FacebookClient\\Helper\\AuthorizationHelper::getAuthorizationFromAccessToken"
                     ]
                 }
             }

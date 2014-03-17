@@ -1,5 +1,5 @@
-footcho Facebook Client
-=======================
+Facebook Client
+===============
 
 Guzzle is awesome, right ?
 

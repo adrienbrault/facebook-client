@@ -1,6 +1,6 @@
 <?php
 
-namespace Footcho\FacebookClient\Helper;
+namespace AdrienBrault\FacebookClient\Helper;
 
 class AuthorizationHelper
 {

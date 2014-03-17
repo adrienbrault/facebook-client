@@ -1,17 +1,18 @@
 {
-    "name": "footcho/facebook-client",
+    "name": "adrienbrault/facebook-client",
     "license": "MIT",
     "require": {
         "guzzle/guzzle": "3.*"
     },
     "require-dev": {
         "phpunit/phpunit": "~3.7",
-        "symfony/framework-bundle": "2.1.*"
+        "symfony/symfony": "2.1.*",
+        "symfony/finder": "2.*"
     },
     "autoload": {
         "psr-0": {
-            "Footcho\\FacebookClient": "src",
-            "Footcho\\FacebookClientBundle": "src"
+            "AdrienBrault\\FacebookClient": "src",
+            "AdrienBrault\\FacebookClientBundle": "src"
         }
     },
     "extra": {

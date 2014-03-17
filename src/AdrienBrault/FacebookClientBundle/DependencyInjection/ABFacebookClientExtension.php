@@ -1,13 +1,13 @@
 <?php
 
-namespace Footcho\FacebookClientBundle\DependencyInjection;
+namespace AdrienBrault\FacebookClientBundle\DependencyInjection;
 
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 
-class FootchoFacebookClientExtension extends Extension
+class ABFacebookClientExtension extends Extension
 {
     /**
      * {@inheritdoc}

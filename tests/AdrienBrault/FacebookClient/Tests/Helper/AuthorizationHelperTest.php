@@ -1,8 +1,8 @@
 <?php
 
-namespace Footcho\FacebookClient\Tests\Helper;
+namespace AdrienBrault\FacebookClient\Tests\Helper;
 
-use Footcho\FacebookClient\Helper\AuthorizationHelper;
+use AdrienBrault\FacebookClient\Helper\AuthorizationHelper;
 
 class AuthorizationHelperTest extends \PHPUnit_Framework_TestCase
 {

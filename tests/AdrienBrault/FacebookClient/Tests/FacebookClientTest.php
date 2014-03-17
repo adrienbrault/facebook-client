@@ -1,6 +1,6 @@
 <?php
 
-namespace Footcho\FacebookClient\Tests;
+namespace AdrienBrault\FacebookClient\Tests;
 
 use Guzzle\Tests\GuzzleTestCase;
 

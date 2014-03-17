@@ -1,8 +1,0 @@
-parameters:
-    footcho.facebook_client.client.class: Footcho\FacebookClient\FacebookClient
-
-services:
-    footcho.facebook_client.client:
-        class: %footcho.facebook_client.client.class%
-        factory_class: %footcho.facebook_client.client.class%
-        factory_method: factory

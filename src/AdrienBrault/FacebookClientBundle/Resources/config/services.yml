@@ -1,0 +1,8 @@
+parameters:
+    ab_facebook_client.client.class: AdrienBrault\FacebookClient\FacebookClient
+
+services:
+    ab_facebook_client.client:
+        class: %ab_facebook_client.client.class%
+        factory_class: %ab_facebook_client.client.class%
+        factory_method: factory
