@@ -2,7 +2,9 @@
 
 namespace Footcho\FacebookClient\Tests;
 
-class FacebookClientTest extends \Guzzle\Tests\GuzzleTestCase
+use Guzzle\Tests\GuzzleTestCase;
+
+class FacebookClientTest extends GuzzleTestCase
 {
     public function testGetMeCommand()
     {
@@ -21,7 +23,7 @@ class FacebookClientTest extends \Guzzle\Tests\GuzzleTestCase
         ));
         $result = $response->json();
 
-        $this->assertEquals('/me?fields=id,name,first_name', $response->getRequest()->getPath());
+        $this->assertStringEndsWith('/me?fields='.urlencode('id,name,first_name'), $response->getEffectiveUrl());
 
         $this->assertEquals(array(
             'id' => '659664442',
